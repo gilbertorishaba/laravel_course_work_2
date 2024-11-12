@@ -11,7 +11,7 @@ class Enrollment extends Model
 {
     use HasFactory;
 
-    // Define which attributes can be mass assigned
+
     protected $fillable = [
         'student_name',
         'email',
@@ -20,7 +20,7 @@ class Enrollment extends Model
         'status',
         'grade',
         'dob',
-        'phone',        // Grade (nullable)
+        'phone',
     ];
 
     // Define relationship with the Student model

@@ -269,7 +269,32 @@
 
 
 
+                                <!-- Report Type -->
                                 <div class="form-group">
+                                    <label for="report_type">Report Type</label>
+                                    <input type="text" name="report_type" id="report_type" class="form-control"
+                                        required>
+                                </div>
+
+                                <!-- Generated At -->
+                                <div class="form-group">
+                                    <label for="generated_at">Generated At</label>
+                                    <input type="date" name="generated_at" id="generated_at" class="form-control"
+                                        required>
+                                </div>
+
+                                <!-- Select Course -->
+                                <div class="form-group">
+                                    <label for="course_name">Course</label>
+                                    <select name="course_id" id="course_name" class="form-control" required>
+                                        <option value="" disabled selected>Select a Course</option>
+                                        @foreach ($courses as $course)
+                                            <option value="{{ $course->id }}">{{ $course->course_name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                {{-- <div class="form-group">
                                     <label for="students">Generated_by</label>
                                     <select name="students[]" id="students" class="form-control" multiple>
                                         @foreach ($courses as $course)
@@ -280,8 +305,7 @@
                                             </optgroup>
                                         @endforeach
                                     </select>
-                                </div>
-
+                                </div> --}}
                                 <!-- Submit Button -->
                                 <button type="submit" class="btn btn-primary">Generate Report</button>
                             </form>

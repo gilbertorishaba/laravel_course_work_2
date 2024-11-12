@@ -194,7 +194,7 @@
                         </div>
                         <ul class="chat-list">
                             <li class="list active">
-                                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span
+                                <div class="profile"><img src="{{ asset('images/faces/logo.png') }}" alt="image"><span
                                         class="online"></span></div>
                                 <div class="info">
                                     <p>Gilbert Orishaba</p>
@@ -203,8 +203,8 @@
                                 <small class="text-muted my-auto">19 min</small>
                             </li>
                             <li class="list">
-                                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span
-                                        class="offline"></span></div>
+                                <div class="profile"><img src="{{ asset('images/faces/face2.jpg') }}"
+                                        alt="image"><span class="offline"></span></div>
                                 <div class="info">
                                     <div class="wrapper d-flex">
                                         <p>Catherine Omoth</p>
@@ -215,8 +215,8 @@
                                 <small class="text-muted my-auto">23 min</small>
                             </li>
                             <li class="list">
-                                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span
-                                        class="online"></span></div>
+                                <div class="profile"><img src="{{ asset('images/faces/face3.jpg') }}"
+                                        alt="image"><span class="online"></span></div>
                                 <div class="info">
                                     <p>Magumba Hassan</p>
                                     <p>Available</p>
@@ -224,8 +224,8 @@
                                 <small class="text-muted my-auto">14 min</small>
                             </li>
                             <li class="list">
-                                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span
-                                        class="offline"></span></div>
+                                <div class="profile"><img src="{{ asset('images/faces/face4.jpg') }}"
+                                        alt="image"><span class="offline"></span></div>
                                 <div class="info">
                                     <p>Ronnie</p>
                                     <p>Away</p>
